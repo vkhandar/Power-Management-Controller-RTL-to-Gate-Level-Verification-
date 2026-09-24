@@ -1,0 +1,8 @@
+out/
+work/
+transcript
+*.wlf
+*.ucdb
+modelsim.ini
+__pycache__/
+*.pyc

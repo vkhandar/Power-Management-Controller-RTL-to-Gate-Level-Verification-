@@ -1,0 +1,13 @@
+# Generic, technology-independent netlist for the gate-level UVM run.
+read_verilog -sv rtl/pmic_pkg.sv rtl/power_controller.sv
+hierarchy -check -top power_controller
+proc
+opt
+fsm
+opt
+techmap
+opt
+abc
+clean
+write_verilog -noattr out/gate/power_controller_netlist.v
+
